@@ -1,0 +1,73 @@
+title: CIWG 2.0 – Workstream 3
+description: Trust and Security Architecture Deliverables
+baseurl: ""
+url: "https://<org>.github.io/<repo>"
+
+remote_theme: just-the-docs/just-the-docs@v0.10.0
+
+# --- Navigation ---
+nav_sort: order   # use nav_order in front matter
+nav_external_links:
+  - title: CIWG 2.0 WS3 on GitHub
+    url: https://github.com/emningno/CIWG-WS3
+
+# --- Header / footer ---
+aux_links:
+  "Edit on GitHub":
+    - "https://github.com/emningno/CIWG-WS3"
+aux_links_new_tab: true
+
+footer_content: "OpenPeppol – Critical Infrastructure Working Group 2.0, Workstream 3"
+
+# --- Search ---
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 2
+  preview_words_before: 3
+  preview_words_after: 3
+  tokenizer_separator: /[\s\-/]+/
+
+# --- Callouts (used for status, notes, open questions) ---
+callouts_level: quiet
+callouts:
+  accepted:
+    title: Accepted
+    color: green
+  proposed:
+    title: Proposed – open for comment
+    color: yellow
+  draft:
+    title: Draft
+    color: blue
+  deprecated:
+    title: Deprecated / Superseded
+    color: red
+  open-question:
+    title: Open question
+    color: purple
+
+# --- Back to top ---
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# --- Last modified ---
+last_edit_timestamp: true
+last_edit_time_format: "%d %B %Y"
+
+# --- Mermaid (diagram support) ---
+mermaid:
+  version: "9.1.6"
+
+# --- Plugins (safe mode compatible) ---
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# --- Defaults ---
+defaults:
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: default

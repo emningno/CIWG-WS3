@@ -1,0 +1,39 @@
+name: Open question
+description: Raise an unresolved question about a WS3 deliverable
+title: "[Question] "
+labels: ["open-question"]
+body:
+  - type: dropdown
+    id: deliverable
+    attributes:
+      label: Affected deliverable
+      options:
+        - Future Trust Architecture
+        - Evolution Path Assessment
+        - Segmentation Model
+        - Peppol-ERDS Formal Gap Analysis
+        - Cross-cutting
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: State the open question as precisely as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why does this need resolution? What depends on it?
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: List any options or positions already discussed.
+  - type: input
+    id: target
+    attributes:
+      label: Target resolution date / meeting
+      placeholder: e.g. WS3 meeting 2025-06-12
